@@ -21,7 +21,7 @@ export class BilletsComponent implements OnInit {
   });*/
   this.route.paramMap.subscribe({
     next: params =>{
-      this.destinationName = params.get("name");
+      this.destinationName = params.get("code");
       console.log(this.destinationName);
       if(this.destinationName != undefined){
         this.getTickets();

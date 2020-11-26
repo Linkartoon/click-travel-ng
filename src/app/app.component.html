@@ -6,7 +6,7 @@
     <div>
       <h1 class="title">{{ title }}</h1>
       <div class="links">
-        <a href="javascript:void(0)" [routerLink]="['/destination', destination.name]"  *ngFor="let destination of this.dreamDestinations" class="giant-button"> {{destination.name}} </a>
+        <a href="javascript:void(0)" [routerLink]="['/destination', destination.code]"  *ngFor="let destination of this.dreamDestinations" class="giant-button"> {{destination.name}} </a>
         <!-- <a href="#" class="giant-button"> San Francisco, USA </a>
         <a href="#" class="giant-button"> Québec, Canada </a>
         <a href="#" class="giant-button"> Bora Bora, Polynésie </a>

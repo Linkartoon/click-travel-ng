@@ -17,9 +17,9 @@ export class ClickTravelService {
     }
 
     getTicketsForDestination(destination: string): Observable<ITicket[]>{
-      let query = { filter : { where : { to : destination}}};
+      let query = { where : { to : destination}};
       let strQuery = JSON.stringify(query);
-      let ticketsUrl = this.apiUrl+"tickets?"+strQuery;
+      let ticketsUrl = this.apiUrl+"tickets?filter="+encodeURI(strQuery);
       return this.httpClient.get<ITicket[]>(ticketsUrl);
     }
 }
