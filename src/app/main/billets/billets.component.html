@@ -1,1 +1,9 @@
-<p>billets works!</p>
+<div>
+  <h1 class="title">Tickets : </h1>
+  <ng-container *ngFor="let ticket of tickets">
+    <a class="giant-button" href="javascript:void(0)" >
+      from: {{ticket.from}} to {{ticket.to}}
+    </a>
+    <br>
+  </ng-container>
+</div>

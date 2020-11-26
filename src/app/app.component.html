@@ -6,11 +6,13 @@
     <div>
       <h1 class="title">{{ title }}</h1>
       <div class="links">
-        <a href="#" class="giant-button"> San Francisco, USA </a>
+        <a href="javascript:void(0)" [routerLink]="['/destination', destination.name]"  *ngFor="let destination of this.dreamDestinations" class="giant-button"> {{destination.name}} </a>
+        <!-- <a href="#" class="giant-button"> San Francisco, USA </a>
         <a href="#" class="giant-button"> Québec, Canada </a>
         <a href="#" class="giant-button"> Bora Bora, Polynésie </a>
-        <a href="#" class="giant-button"> Torres del Paine, Chile </a>
+        <a href="#" class="giant-button"> Torres del Paine, Chile </a> -->
       </div>
     </div>
+    <router-outlet></router-outlet>
   </div>
 </div>
