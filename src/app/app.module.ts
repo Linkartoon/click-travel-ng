@@ -8,12 +8,14 @@ import { ClickTravelService } from './services/click-travel.service';
 import { HttpClientModule } from '@angular/common/http';
 import { BilletsComponent } from './main/billets/billets.component';
 import { CommonModule } from '@angular/common';
+import { BilletDetailComponent } from './main/billet-detail/billet-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LogoComponent,
-    BilletsComponent
+    BilletsComponent,
+    BilletDetailComponent
   ],
   imports: [
     BrowserModule,

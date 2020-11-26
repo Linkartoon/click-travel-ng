@@ -1,0 +1,52 @@
+.ticket{
+  width: 800px;
+  height: 250px;
+  background: #00a2ff;
+  border-radius: 10px;
+  box-shadow: 0 0 100px #aaa;
+}
+
+.airline{
+  font-family: Arial;
+  font-size: 20px;
+  color: white;
+}
+
+.content{
+  background-color: white;
+  width: 800px;
+  height: 180px;
+  margin: 0px !important;
+}
+
+.header{
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.inside{
+  padding: 5px 10px;
+}
+
+.vl {
+  border-left: 3px dashed gray;
+  height: 250px;
+  position: absolute;
+  left: 548px;
+  margin-left: -3px;
+  top: 0;
+  z-index: 10;
+}
+
+.line-container{
+  position:relative;
+}
+
+.flex-line{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info{
+  color: gray;
+}

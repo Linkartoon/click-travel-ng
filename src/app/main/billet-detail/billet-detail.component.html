@@ -1,0 +1,101 @@
+<div *ngIf="ticket" class="ticket">
+  <div class="line-container"><div class="vl"></div></div>
+  <div class="row header inside">
+    <h3 class="airline col-8">
+      Boarding Pass
+      <span class="plane">&#9992;</span>
+      <br />
+      {{ ticket.class }}
+    </h3>
+
+    <h3 class="airline col-4">
+      Boarding Pass
+      <span class="plane">&#9992;</span>
+      <br />
+      {{ ticket.class }}
+    </h3>
+  </div>
+
+  <div class="content inside">
+    <div class="row">
+      <div class="col-8">
+        <div>
+          <span class="info">PASSENGER</span>
+          <h5>NAME SURNAME</h5>
+        </div>
+      </div>
+      <div class="col-4">
+        <span
+          > <span class="info">PASSENGER</span>
+          <h5>NAME SURNAME</h5></span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-8 flex-line">
+        <div>
+           <span class="info">FLIGHT</span>
+          <h5>{{ticket.flight | uppercase}}</h5>
+        </div>
+
+        <div>
+          <span class="info">FROM</span>
+          <h5>{{ticket.from | uppercase}}</h5>
+        </div>
+
+        <div>
+          <span class="info">TO</span>
+          <h5>{{ticket.to | uppercase}}</h5>
+        </div>
+
+        <div>
+          <span class="info">CLASS</span>
+          <h5>{{ticket.class | uppercase}}</h5>
+        </div>
+      </div>
+
+      <div class="col-4 flex-line">
+        <div>
+          <span class="info">GATE</span>
+          <h5>{{ticket.gate | uppercase}}</h5>
+        </div>
+
+        <div>
+          <span class="info">TIME</span>
+          <h5>{{ticket.time | uppercase }}</h5>
+        </div>
+
+        <div>
+          <span class="info">SEAT</span>
+          <h5>{{ticket.seat | uppercase}}</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-8 flex-line">
+          <div>
+            <span class="info">GATE</span>
+            <h5>{{ticket.gate | uppercase}}</h5>
+          </div>
+
+          <div>
+            <span class="info">TIME</span>
+            <h5>{{ticket.time | uppercase }}</h5>
+          </div>
+
+          <div>
+            <span class="info">SEAT</span>
+            <h5>{{ticket.seat | uppercase}}</h5>
+          </div>
+          <div><img id="barcode" width="250px" height="50px" src="https://ycdn.space/f/ba/bar-code-39_4.png"/></div>
+      </div>
+
+      <div class="col-4">
+          <img id="barcode" width="250px" height="50px" src="https://ycdn.space/f/ba/bar-code-39_4.png"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer inside"></div>
+</div>

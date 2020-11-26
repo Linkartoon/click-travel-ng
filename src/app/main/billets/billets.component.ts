@@ -11,6 +11,7 @@ import { ClickTravelService } from 'src/app/services/click-travel.service';
 export class BilletsComponent implements OnInit {
   tickets: ITicket[];
   destinationName: string;
+  selectedTicket: ITicket;
   constructor(private route: ActivatedRoute, private clickTravelService: ClickTravelService) { }
 
   ngOnInit(): void {

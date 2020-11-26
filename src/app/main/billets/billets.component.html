@@ -1,9 +1,10 @@
 <div>
   <h1 class="title">Tickets : </h1>
   <ng-container *ngFor="let ticket of tickets">
-    <a class="giant-button" href="javascript:void(0)" >
+    <a class="giant-button" href="javascript:void(0)" (click)="selectedTicket = ticket">
       from: {{ticket.from}} to {{ticket.to}}
     </a>
     <br>
   </ng-container>
+  <app-billet-detail [ticket]="selectedTicket"></app-billet-detail>
 </div>
